@@ -6,9 +6,16 @@ jobs:
 
     steps:
       - checkout
+      
+      - run:
+          name: Set Ruby Version
+          command: echo "ruby-2.3.3" > ~/.ruby-version
+
       - run:
           name: Install
           command: bundle install
+
+
       - run:
           name: Build
           command: bundle exec fastlane ios beta
