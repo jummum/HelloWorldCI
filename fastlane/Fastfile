@@ -22,6 +22,11 @@ platform :ios do
   end
   lane :beta do
   	increment_build_number
+    match(
+      readonly: true,
+      type: 'adhoc',
+      app_identifier: ''
+    )
   	gym(
   		project:'HelloWorldCI.xcodeproj',
   		scheme: 'HelloWorldCI',
