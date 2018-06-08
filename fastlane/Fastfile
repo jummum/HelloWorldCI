@@ -25,7 +25,7 @@ platform :ios do
     match(
       readonly: true,
       type: 'adhoc',
-      app_identifier: ''
+      app_identifier: 'com.mfec.HelloWorldCI'
     )
   	gym(
   		project:'HelloWorldCI.xcodeproj',
