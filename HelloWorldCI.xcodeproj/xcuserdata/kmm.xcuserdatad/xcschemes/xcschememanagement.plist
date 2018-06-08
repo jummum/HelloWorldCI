@@ -4,10 +4,28 @@
 <dict>
 	<key>SchemeUserState</key>
 	<dict>
-		<key>HelloWorldCI.xcscheme</key>
+		<key>HelloWorldCI.xcscheme_^#shared#^_</key>
 		<dict>
 			<key>orderHint</key>
 			<integer>0</integer>
+		</dict>
+	</dict>
+	<key>SuppressBuildableAutocreation</key>
+	<dict>
+		<key>BBA0D8AD20C9354D00D1BDFD</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>BBA0D8C120C9354E00D1BDFD</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>BBA0D8CC20C9354E00D1BDFD</key>
+		<dict>
+			<key>primary</key>
+			<true/>
 		</dict>
 	</dict>
 </dict>

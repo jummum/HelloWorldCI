@@ -20,4 +20,17 @@ platform :ios do
   lane :custom_lane do
     # add actions here: https://docs.fastlane.tools/actions
   end
+  lane :beta do
+  	increment_build_number
+  	gym(
+  		project:'HelloWorldCI.xcodeproj',
+  		scheme: 'HelloWorldCI',
+  		clean: true,
+  		export_method: 'ad-hoc'
+  	)
+  	hockey(api_token:'e76337ce19d24c34ad48dd935bbe3291')
+  	# bundle exec fastlane ios beta
+    # add actions here: https://docs.fastlane.tools/actions
+  end
+
 end
